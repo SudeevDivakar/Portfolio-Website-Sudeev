@@ -50,3 +50,8 @@ a {
 #main-navigation h1 a:active {
   color: white;
 }
+
+.horizontal-space {
+  padding-right: 10px;
+  padding-left: 10px;
+}
