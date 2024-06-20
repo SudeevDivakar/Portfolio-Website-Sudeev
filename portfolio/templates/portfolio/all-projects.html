@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} All Projects {% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static "portfolio/project.css" %}">
+    <link rel="stylesheet" href="{% static "portfolio/all-projects.css" %}">
+{% endblock %}
+
+{% block content %}
+    <section id="all-posts">
+        <h2>All Projects</h2>
+        <ul>
+            {% include "portfolio/partials/project.html" %}
+            {% include "portfolio/partials/project.html" %}
+            {% include "portfolio/partials/project.html" %}
+            {% include "portfolio/partials/project.html" %}
+            {% include "portfolio/partials/project.html" %}
+            {% include "portfolio/partials/project.html" %}
+        </ul>
+    </section>
+{% endblock %}

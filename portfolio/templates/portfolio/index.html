@@ -1,0 +1,36 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block links %}
+  <link rel="stylesheet" href="{% static "portfolio/project.css" %}">
+  <link rel="stylesheet" href="{% static "portfolio/index.css" %}">
+{% endblock %}
+
+{% block title %} 
+    Home
+{% endblock %} 
+
+{% block content %}
+
+<section id="welcome">
+  <header>
+    <img src="{% static "portfolio/images/displayPicture.jpg" %}" alt="Sudeev" />
+  </header>
+  <p>
+    <span class="enlarge">Hi 😄</span>
+    <br><span class="enlarger">I'm <span class="linear-gradient-orange">Sudeev</span></span> 
+    <br><span class="enmini">A Software Engineer from India</span> 
+    <br><br>Passionate developer with a knack for creating dynamic and user-friendly websites.<br>Explore my projects and get in touch to collaborate on exciting web development ventures.</p>
+</section>
+
+<section id="latest-posts">
+  <h2>Projects</h2>
+  <ul>
+    {% include "portfolio/partials/project.html" %}
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What I Do</h2>
+</section>
+{% endblock %}
