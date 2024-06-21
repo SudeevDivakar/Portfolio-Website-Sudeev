@@ -51,23 +51,6 @@
   flex: 1;
 }
 
-#about {
-  text-align: center;
-  padding: 3rem;
-  background-color: black;
-  margin-top: 5rem;
-}
-
-#about h2 {
-  font-size: 3rem;
-  color: white;
-}
-
-#about p {
-  font-size: 1.5rem;
-  color: white;
-}
-
 .enlarge {
   font-size: 3rem;
   font-weight:bold;
@@ -87,4 +70,31 @@
 
 .linear-gradient-orange {
   color: rgb(102, 228, 85)
+}
+
+
+#about {
+  text-align: center;
+  padding: 3rem;
+  background-color: rgb(11, 11, 11);
+  margin-top: 5rem;
+  max-height: 4rem;
+}
+
+#about h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+#about p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transform: translate(0, -0.5em);
+  margin: 0 0.5em;
 }

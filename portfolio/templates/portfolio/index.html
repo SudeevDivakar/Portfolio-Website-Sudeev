@@ -2,12 +2,12 @@
 {% load static %}
 
 {% block links %}
-  <link rel="stylesheet" href="{% static "portfolio/project.css" %}">
+  <link rel="stylesheet" href="{% static "portfolio/partials/project.css" %}">
   <link rel="stylesheet" href="{% static "portfolio/index.css" %}">
 {% endblock %}
 
 {% block title %} 
-    Home
+    Sudeev Divakar
 {% endblock %} 
 
 {% block content %}
@@ -26,11 +26,12 @@
 <section id="latest-posts">
   <h2>Projects</h2>
   <ul>
-    {% include "portfolio/partials/project.html" %}
+    {% for project in projects %}
+      {% include "portfolio/partials/project.html" %}
+    {% endfor %}
   </ul>
 </section>
 
-<section id="about">
-  <h2>What I Do</h2>
-</section>
+{% include "portfolio/partials/footer.html" %}
+
 {% endblock %}

@@ -1,0 +1,43 @@
+{% load static %}
+
+<section id="about">
+  <a href="https://github.com/SudeevDivakar" target="_blank">
+    <img src="{% static "portfolio/images/github_icon.webp" %}" alt="GH" class="icon" />
+  </a>
+  <a href="https://www.linkedin.com/in/sudeev-divakar-66116026a/" target="_blank">
+    <img src="{%static "portfolio/images/linkedin_icon.png" %}" alt="LI" class="icon" />
+  </a>
+  <a href="#" id="copyLink" class="copy-link">
+    <img src="{% static "portfolio/images/gmail_icon.jpg" %}" alt="GM" class="icon">
+  </a>
+  <a href="https://www.instagram.com/sudeev_gb?igsh=NGl0YXJqMXpodjk5" target="_blank">
+    <img src="{% static "portfolio/images/ig_icon.jpg" %}" alt="IG" class="icon">
+  </a>
+</section>
+
+  <script>
+    document.getElementById('copyLink').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior
+
+    // The text to be copied
+    const textToCopy = 'sudeev.divakar@gmail.com';
+
+    // Create a temporary textarea element to hold the text
+    const textarea = document.createElement('textarea');
+    textarea.value = textToCopy;
+    document.body.appendChild(textarea);
+
+    // Select the text
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text to the clipboard
+    document.execCommand('copy');
+
+    // Remove the temporary textarea
+    document.body.removeChild(textarea);
+
+    // Optionally, alert the user
+    alert('Text copied to clipboard: ' + textToCopy);
+    });
+  </script>
