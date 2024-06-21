@@ -2,10 +2,10 @@
 
 <li>
     <article class="post">
-        <a href="">
-            <img src="{% static "portfolio/images/rmd_winners.jpg" %}" alt="Real Madrid Win 15th CL Title" />
+        <a href="{% url "project-detail-page" project.slug %}">
+            <img src="{% static "portfolio/images/rmd_winners.jpg" %}" alt="{{project.title}}" />
             <div class="post_content">
-                <h3>Real Madrid Win 15th CL Title</h3>
+                <h3>{{project.title}}</h3>
                 <p>
                     Dani Carvajal and Vinicius Jr. put Real Madrid on the Winning side
                     of the Champions League Final - 2024 as Real Madrid lift their 15th Champions League Title.
