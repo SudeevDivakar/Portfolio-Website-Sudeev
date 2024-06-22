@@ -1,17 +1,21 @@
 {% load static %}
 
 <section id="about">
-  <a href="https://github.com/SudeevDivakar" target="_blank">
+  <a href="https://github.com/SudeevDivakar" target="_blank" class="tooltip">
     <img src="{% static "portfolio/images/github_icon.webp" %}" alt="GH" class="icon" />
+    <span class="tooltiptext">GitHub</span>
   </a>
-  <a href="https://www.linkedin.com/in/sudeev-divakar-66116026a/" target="_blank">
+  <a href="https://www.linkedin.com/in/sudeev-divakar-66116026a/" target="_blank" class="tooltip">
     <img src="{%static "portfolio/images/linkedin_icon.png" %}" alt="LI" class="icon" />
+    <span class="tooltiptext">LinkedIn</span>
   </a>
-  <a href="#" id="copyLink" class="copy-link">
+  <a href="#" id="copyLink" class="copy-link tooltip">
     <img src="{% static "portfolio/images/gmail_icon.jpg" %}" alt="GM" class="icon">
+    <span class="tooltiptext" id="gmailTooltip">Copy Email</span>
   </a>
-  <a href="https://www.instagram.com/sudeev_gb?igsh=NGl0YXJqMXpodjk5" target="_blank">
+  <a href="https://www.instagram.com/sudeev_gb?igsh=NGl0YXJqMXpodjk5" target="_blank" class="tooltip">
     <img src="{% static "portfolio/images/ig_icon.jpg" %}" alt="IG" class="icon">
+    <span class="tooltiptext">Instagram</span>
   </a>
 </section>
 
@@ -37,7 +41,12 @@
     // Remove the temporary textarea
     document.body.removeChild(textarea);
 
-    // Optionally, alert the user
-    alert('Text copied to clipboard: ' + textToCopy);
+    const tooltip = document.getElementById('gmailTooltip');
+    tooltip.innerHTML = 'Copied &#10003;'; // &#10003; is the HTML entity for the tick symbol
+
+    // Optionally, revert the tooltip text back after a few seconds
+    setTimeout(function() {
+      tooltip.innerHTML = 'Copy Email';
+    }, 2000); 
     });
   </script>
