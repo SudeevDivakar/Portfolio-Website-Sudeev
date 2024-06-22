@@ -20,7 +20,17 @@
     <span class="enlarge">Hi 😄</span>
     <br><span class="enlarger">I'm <span class="linear-gradient-orange">Sudeev</span></span> 
     <br><span class="enmini">A Software Engineer from India</span> 
-    <br><br>Passionate developer with a knack for creating dynamic and user-friendly websites.<br>Explore my projects and get in touch to collaborate on exciting web development ventures.</p>
+    <br><br>Passionate developer with a knack for creating 
+    <br>dynamic and user-friendly websites.
+    <div>
+      <button class="index-button" id="about-me-redirect-button">About me</button>
+      <button class="index-button" id="view-projects-redirect-button">View Projects</button>
+    </div>
+    <div class="socials">
+      <a href="" class="socials-item" target="_blank"><i class="fa-solid fa-file"></i><span class="space-left">My Resume</span></a>
+      <a href="https://github.com/SudeevDivakar" target="_blank" class="socials-item"><i class="fa-brands fa-github"></i><span class="space-left">SudeevDivakar</span></a>
+      <a href="https://www.linkedin.com/in/sudeev-divakar-66116026a/" target="_blank" class="socials-item"><i class="fa-brands fa-linkedin"></i><span class="space-left">Sudeev Divakar</span></a>
+    </div>
 </section>
 
 <section id="latest-posts">
@@ -33,5 +43,11 @@
 </section>
 
 {% include "portfolio/partials/footer.html" %}
+
+<script>
+  document.getElementById('view-projects-redirect-button').addEventListener('click', function() {
+    window.location.href = 'http://localhost:8000/projects';  
+  });
+</script>
 
 {% endblock %}
