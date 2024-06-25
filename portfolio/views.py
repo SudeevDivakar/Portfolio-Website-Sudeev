@@ -2,6 +2,8 @@ from datetime import date
 
 from django.shortcuts import render
 
+"""Content for All Projects Page"""
+
 all_projects = [
     {
         "slug": "turf-review",
@@ -80,8 +82,83 @@ all_projects = [
         "content":"""
 
         """
-    }
+    },
+    {
+        "slug": "portfolio-website",
+        "image": "portfolio.jpg",
+        "title": "Portfolio Website",
+        "github-link": "",
+        "project-link": None,
+        "tech-used": ["Django", "DTL", "HTML", "CSS"],
+        "api-used": None,
+        "description": "Portfolio website showcasing my projects, skill, achievements and knowledge",
+        "content":"""
+
+        """
+    },
 ]
+
+"""End content for All Projects Page"""
+
+
+"""Content for Index Page"""
+
+top_three_projects = [
+    {
+        "slug": "turf-review",
+        "image": "turfreview.jpeg",
+        "title": "Turf Review System",
+        "github-link": "https://github.com/SudeevDivakar/Turf-Review-System",
+        "project-link": "https://turfreview.vercel.app/",
+        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
+        "api-used": ["Cloudinary", "Leaflet"],
+        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
+        "content": """
+          
+        """
+    },
+    {
+        "slug": "chat-application",
+        "image": "chatapp.jpg",
+        "title": "Chat Application",
+        "github-link": "https://github.com/SudeevDivakar/Chit-Chat-MERN-Stack-",
+        "project-link": None,
+        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
+        "api-used": None,
+        "description": "Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups",
+        "content":"""
+
+        """
+    },
+    {
+        "slug": "parking-manager",
+        "image": "parkingmanager.jpg",
+        "title": "Parking Lot Manager",
+        "github-link": "https://github.com/SudeevDivakar/Parking_Management_System",
+        "project-link": None,
+        "tech-used": ["NodeJS", "EJS", "MySQL", "Express", "Bulma"],
+        "api-used": None,
+        "description": "The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces",
+        "content": """
+          
+        """
+    },
+]
+
+achievements = [
+    {
+        "image": "rv_football.jpg",
+        "title": "Runners Up - Football",
+        "description": "Secured Second Place in Football in JEET 2024 (RVU)"
+    },
+    {
+        "image": "inter_dept.jpg",
+        "title": "Winners - Football",
+        "description": "Secured First Place in Interdepartment Football 2024 (PESU)"
+    },
+]
+
+"""End of content for index page"""
 
 
 """Content for the About Me Page"""
@@ -158,7 +235,10 @@ work_experience = [
 
 # Create your views here.
 def index(request):
-    return render(request, "portfolio/index.html")
+    return render(request, "portfolio/index.html", {
+        "top_three_projects": top_three_projects,
+        "achievements": achievements
+    })
 
 def projects(request):
     return render(request, "portfolio/all-projects.html",{

@@ -24,7 +24,7 @@
     <br>dynamic and user-friendly websites.
     <div>
       <button class="index-button" id="about-me-redirect-button">About me</button>
-      <button class="index-button" id="view-projects-redirect-button">View Projects</button>
+      <button class="index-button" id="view-projects-redirect-button">View All Projects</button>
     </div>
     <div class="socials">
       <a href="" class="socials-item" target="_blank"><i class="fa-solid fa-file"></i><span class="space-left">My Resume</span></a>
@@ -34,10 +34,27 @@
 </section>
 
 <section id="latest-posts">
-  <h2>Projects</h2>
+  <h2>Relevant Projects</h2>
   <ul>
-    {% for project in projects %}
+    {% for project in top_three_projects %}
       {% include "portfolio/partials/project.html" %}
+    {% endfor %}
+  </ul>
+  <div id="special-link">
+    <a href="{% url "projects-page" %}" class="special-link">View All Projects <i class="fa-solid fa-square-arrow-up-right"></i></a>
+  </div>
+  <h2 class="more-margin-top">Personal Achievements</h2>
+  <ul>
+    {% for ach in achievements %}
+      <li>
+        <article class="post">
+          <img src="{% static "portfolio/images/achievements/"|add:ach.image %}" class="achievements-image" alt="">
+          <div>
+            <h3>{{ach.title}}</h3>
+            <p>{{ach.description}}</p>
+          </div>
+        </article>
+      </li>
     {% endfor %}
   </ul>
 </section>
