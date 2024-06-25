@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Sudeev Divakar - About Me {% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static "portfolio/index.css" %}">
+    <link rel="stylesheet" href="{% static "portfolio/about-me.css" %}">
+{% endblock %}
+
+{% block content %}
+    <section id="welcome">
+        <p>
+            <span class="enlarge">About</span>
+            <br><span class="enlarger saucy-green">Sudeev Divakar</span> 
+            <div id="about-me-info">
+                <div id="about-me-para">
+                    <p>
+                        Hello, I'm Sudeev, a passionate web developer based in Bengaluru. Beyond crafting elegant and functional web applications, I have a deep love for sports ⚽ and culinary adventures👨‍🍳. These hobbies teach me integral qualities like teamwork, resilience, and the thrill of pushing boundaries—qualities that resonate in my approach to coding. Whether I'm on the field strategizing a play or debugging a complex algorithm, the spirit of sportsmanship and discipline guides my work ethic.
+                        <br><br>
+                        When not immersed in web development, I'm avidly exploring new technologies and frameworks. Coding isn't just a job; it's a passion driving constant learning and innovation. Like crafting a recipe, I take pleasure in architecting clean, efficient code that brings ideas to life. From frontend design to backend functionality, I focus on creating robust, user-friendly applications.
+                        <br><br>
+                        Let's collaborate to elevate your digital presence with cutting-edge web solutions that blend creativity, functionality, and a commitment to excellence.
+                    </p>
+                </div>
+                <div id="about-me-photo">
+                    <img src="{% static "portfolio/images/displayPicture.jpg" %}" alt="Sudeev" />
+                </div> 
+            </div>
+            <div class="socials">
+                <a href="" class="socials-item" target="_blank"><i class="fa-solid fa-file"></i><span class="space-left">My Resume</span></a>
+                <a href="https://github.com/SudeevDivakar" target="_blank" class="socials-item"><i class="fa-brands fa-github"></i><span class="space-left">SudeevDivakar</span></a>
+                <a href="https://www.linkedin.com/in/sudeev-divakar-66116026a/" target="_blank" class="socials-item"><i class="fa-brands fa-linkedin"></i><span class="space-left">Sudeev Divakar</span></a>
+            </div>   
+        </p>
+
+        <section id="education">
+            <h1 class="enmini">Education</h1>
+            {% for edu in education %}
+                <div id="education-content">
+                    <div class="pencil-line">
+                        <i class="fa fa-pencil light-green" aria-hidden="true"></i>
+                    </div>
+                    <article class="education-item">
+                        <a target="_blank" href="{{ edu.link }}"><h2 class="institute saucy-yellow">{{ edu.institute }}</h2></a>
+                        <h2 class="year">{{ edu.year }}</h2>
+                        <h2 class="education-text">{{ edu.text }}</h2>
+                    </article>
+                </div>
+            {% endfor %}
+        </section>
+
+        <section id="work-experience">
+            <h1 class="enmini">Work Experience</h1>
+            {% for work in work_experience%}
+                <div id="work-experience-content">
+                    <div class="pencil-line">
+                        <i class="fa fa-laptop light-green" aria-hidden="true"></i>
+                    </div>
+                    <article class="work-experience-item">
+                        <a target="_blank" href="{{ work.link }}"><h2 class="institute saucy-yellow">{{ work.company }}</h2></a>
+                        <h2 class="year">{{ work.duration }}</h2>
+                        <h2 class="education-text">{{ work.position }}</h2>
+                        <div class="tech-content">
+                            {% for tech in work.technologies %}
+                                {% if tech == 'PHP' %}
+                                    <i class="fa-brands fa-php fa-xl tech-icon"></i>
+                                {% elif tech == 'MySQL' %}
+                                    <i class="fa-solid fa-database fa-xl tech-icon" data-tooltip="MySQL"></i>
+                                {% elif tech == "HTML" %}
+                                    <i class="fab fa-html5 fa-xl tech-icon"></i>
+                                {% elif tech == "CSS" %}
+                                    <i class="fab fa-css3 fa-xl tech-icon"></i>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </article>
+                </div>
+            {% endfor %}
+        </section>
+
+        <section id="domain-and-technologies">
+            <h1 class="enmini">Domains and Technologies</h1>
+            {% for domain, technologies in domain_and_technologies.items %}
+                <div id="domain-and-technologies-content">
+                    <div class="pencil-line">
+                        <i class="fas fa-cogs light-green" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h2 class="enminier no-margin-top">{{domain}}</h2>
+                        <div class="domain-container">
+                            {% for tech in technologies %}
+                                <div class="domain-box">{{tech}}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+
+        <section id="certifications">
+            <h1 class="enmini">Certifications</h1>
+            {% for certificate in certifications %}
+                <div id="certifications-content">
+                    <div class="pencil-line">
+                        <i class="fa fa-check light-green" aria-hidden="true"></i>
+                    </div>
+                    {% if certificate.from == "Udemy" %}
+                        <img src="{% static "portfolio/images/udemy_logo.png" %}" class="certification-image" alt="">
+                    {% elif certificate.from == "Atlassian" %}
+                        <img src="{% static "portfolio/images/atlassian_logo.png" %}" class="certification-image" alt="">
+                    {% elif certificate.from == "AWS Training and Certification" %}
+                        <img src="{% static "portfolio/images/aws_logo.jpg" %}" class="certification-image" alt="">
+                    {% endif %}
+                    <article class="certification-item">
+                        <h2 class="education-text bottom-margin">{{ certificate.certification }}</h2>
+                        <div class="bottom-margin-extra">
+                            <span class="education-text saucy-yellow">{{certificate.from}}</span>
+                            <h2 class="year">{{ certificate.date }}</h2>
+                        </div>
+                        <a target="_blank" href="{{ certificate.link }}" class="blue-color">View Credential <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </article>
+                </div>
+            {% endfor %}
+        </section>
+    </section>
+
+    {% include "portfolio/partials/footer.html" %}
+
+{% endblock %}
