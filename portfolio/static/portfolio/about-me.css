@@ -235,3 +235,31 @@
 #domain-and-technologies-content {
     display: flex;
 }
+
+@media (max-width: 1286px) {
+    #about-me-photo {
+        display: none;
+    }
+
+    #about-me-para {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 762px) {
+    #main-name {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 529px) {
+    .socials-item {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 887px) {
+    .year {
+        display: inline-block;
+    }
+}
