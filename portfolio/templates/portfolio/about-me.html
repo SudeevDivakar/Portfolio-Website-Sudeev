@@ -64,13 +64,21 @@
                         <div class="tech-content">
                             {% for tech in work.technologies %}
                                 {% if tech == 'PHP' %}
-                                    <i class="fa-brands fa-php fa-xl tech-icon"></i>
+                                    <i class="fa-brands fa-php fa-xl tech-icon">
+                                        <span class="tooltip-text">{{ tech }}</span>
+                                    </i>
                                 {% elif tech == 'MySQL' %}
-                                    <i class="fa-solid fa-database fa-xl tech-icon" data-tooltip="MySQL"></i>
+                                    <i class="fa-solid fa-database fa-xl tech-icon" data-tooltip="MySQL">
+                                        <span class="tooltip-text">{{ tech }}</span>
+                                    </i>
                                 {% elif tech == "HTML" %}
-                                    <i class="fab fa-html5 fa-xl tech-icon"></i>
+                                    <i class="fab fa-html5 fa-xl tech-icon">
+                                        <span class="tooltip-text">{{ tech }}</span>
+                                    </i>
                                 {% elif tech == "CSS" %}
-                                    <i class="fab fa-css3 fa-xl tech-icon"></i>
+                                    <i class="fab fa-css3 fa-xl tech-icon">
+                                        <span class="tooltip-text">{{ tech }}</span>
+                                    </i>
                                 {% endif %}
                             {% endfor %}
                         </div>
