@@ -114,11 +114,11 @@
                         <i class="fa fa-check light-green" aria-hidden="true"></i>
                     </div>
                     {% if certificate.from == "Udemy" %}
-                        <img src="{% static "portfolio/images/udemy_logo.png" %}" class="certification-image" alt="">
+                        <img src="{% static "portfolio/images/course_logos/udemy_logo.png" %}" class="certification-image" alt="">
                     {% elif certificate.from == "Atlassian" %}
-                        <img src="{% static "portfolio/images/atlassian_logo.png" %}" class="certification-image" alt="">
+                        <img src="{% static "portfolio/images/course_logos/atlassian_logo.png" %}" class="certification-image" alt="">
                     {% elif certificate.from == "AWS Training and Certification" %}
-                        <img src="{% static "portfolio/images/aws_logo.jpg" %}" class="certification-image" alt="">
+                        <img src="{% static "portfolio/images/course_logos/aws_logo.jpg" %}" class="certification-image" alt="">
                     {% endif %}
                     <article class="certification-item">
                         <h2 class="education-text bottom-margin">{{ certificate.certification }}</h2>
