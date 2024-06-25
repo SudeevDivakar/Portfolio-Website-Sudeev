@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Sudeev Divakar - {{project.title}} {% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static "portfolio/index.css" %}">
+    <link rel="stylesheet" href="{% static "portfolio/single_project.css" %}">
+{% endblock %}
+
+{% block content %}
+    <section id="summary">
+        <h2 class="saucy-yellow">{{project.title}}</h2>
+        <article id="project">
+            <div class="mb">
+                <h3 class="about-heading" id="about-heading">About</h3>
+                <h3 class="project-description">{{project.content|linebreaks}}</h3>
+            </div>
+            <div class="mb">
+                <h3 class="about-heading">Technologies Used</h3>
+                <div id="tech-used">
+                    {% for tech in project.tech_used %}
+                        <span class="tech-box">{{tech}}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% if project.api_used %}
+                <div class="mb">
+                    <h3 class="about-heading">APIs Used</h3>
+                    <div id="tech-used">
+                        {% for tech in project.api_used %}
+                            <span class="tech-box">{{tech}}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if project.project_link %}
+                <div class="mb">
+                    <h3 class="about-heading">Project Link</h3>
+                    <h3 class="project-description">To view the website, click <a target="_blank" href="{{project.project_link}}" class="always-blue">here</a></h3>
+                </div>
+            {% endif %}
+            {% if project.project_image %}
+                <div class="mb">
+                    <h3 class="about-heading">Project Images</h3>
+                    {% for pic in project.project_image  %}
+                        <img src="{% static "portfolio/images/projectphotos/"|add:pic %}" class="mb-images" alt="">
+                    {% endfor %}
+                    <h3 class="project-description">For more images, visit the github link</h3>
+                </div>
+            {% endif %}
+            
+            <div class="mb">
+                <h3 class="about-heading">Github Link <i class="fa-solid fa-link"></i></h3>
+                <h3 class="project-description">To visit the github link, click <a target="_blank" href="{{project.github_link}}" class="always-blue">here</a></h3>
+            </div>
+        </article>
+    </section>
+
+    {% include "portfolio/partials/footer.html" %}
+{% endblock %}

@@ -8,92 +8,102 @@ all_projects = [
     {
         "slug": "turf-review",
         "image": "turfreview.jpeg",
+        "project_image": ["turfreview1.png", "turfreview2.png"],
         "title": "Turf Review System",
-        "github-link": "https://github.com/SudeevDivakar/Turf-Review-System",
-        "project-link": "https://turfreview.vercel.app/",
-        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
-        "api-used": ["Cloudinary", "Leaflet"],
+        "github_link": "https://github.com/SudeevDivakar/Turf-Review-System",
+        "project_link": "https://turfreview.vercel.app/",
+        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
+        "api_used": ["Cloudinary", "OpenStreetMap"],
         "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
         "content": """
-          
+          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
         """
     },
     {
         "slug": "parking-manager",
         "image": "parkingmanager.jpg",
+        "project_image": ["parkingmanager1.png", "parkingmanager2.png"],
         "title": "Parking Lot Manager",
-        "github-link": "https://github.com/SudeevDivakar/Parking_Management_System",
-        "project-link": None,
-        "tech-used": ["NodeJS", "EJS", "MySQL", "Express", "Bulma"],
-        "api-used": None,
+        "github_link": "https://github.com/SudeevDivakar/Parking_Management_System",
+        "project_link": None,
+        "tech_used": ["NodeJS", "EJS", "MySQL", "Express", "Bulma"],
+        "api_used": None,
         "description": "The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces",
         "content": """
-          
+            The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces. This system aims to enhance the overall parking experience for both administrators and users in an university setting. The Parking Management System utilizes Express and Node.js for the backend, including routing functionalities. Additionally, it employs EJS for dynamic templating. The project has successfully established a connection to a MySQL database. Furthermore, this project is heavily centered around JavaScript, both on the frontend and backend.
         """
     },
     {
         "slug": "arm-assembler",
         "image": "arm.png",
+        "project_image": None,
         "title": "Arm Assembler",
-        "github-link": "https://github.com/SudeevDivakar/ARM-Assembler",
-        "project-link": None,
-        "tech-used": ["Python"],
-        "api-used": None,
+        "github_link": "https://github.com/SudeevDivakar/ARM-Assembler",
+        "project_link": None,
+        "tech_used": ["Python"],
+        "api_used": None,
         "description": "Assembler using python lex and yacc for subset of instructions of ARM v6",
         "content": """
-          
+            Assembler using python lex and yacc for subset of instructions of ARM v6
+
+            Instructions Supported:
+            ADC | ADD | AND | B | BIC | BL | BLX | BX | CLZ | CMN | CMP | EOR | LDM | LDR | LDRB | LDRH | MLA | MOV | MRS | MSR | MUL | MVN | ORR | RSB | RSC | SBC | SMULL | SMLAL | STM | STR | STRB | STRH | SUB | SWI | TEQ | TST | UMLAL | UMULL
         """
     },
     {
         "slug": "chat-application",
         "image": "chatapp.jpg",
+        "project_image": ["chatapp1.png", "chatapp2.png"],
         "title": "Chat Application",
-        "github-link": "https://github.com/SudeevDivakar/Chit-Chat-MERN-Stack-",
-        "project-link": None,
-        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
-        "api-used": None,
+        "github_link": "https://github.com/SudeevDivakar/Chit-Chat-MERN-Stack-",
+        "project_link": None,
+        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
+        "api_used": None,
         "description": "Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups",
         "content":"""
-
+            Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups. Whether you're looking to chat one-on-one or collaborate with multiple users in a group setting, Chit Chat has you covered.
         """
     },
     {
         "slug": "inventory-management-rabbitmq",
         "image": "invmanagement.png",
+        "project_image": ["invmanagement1.jpeg", "invmanagement2.jpeg"],
         "title": "Microservice Inventory Management (RabbitMQ)",
-        "github-link": "https://github.com/SudeevDivakar/Inventory_Management_Microservices-communication-using-RabbitMQ",
-        "project-link": None,
-        "tech-used": ["NodeJS", "RabbitMQ", "MongoDB", "Mongoose", "Express", "Docker"],
-        "api-used": None,
+        "github_link": "https://github.com/SudeevDivakar/Inventory_Management_Microservices-communication-using-RabbitMQ",
+        "project_link": None,
+        "tech_used": ["NodeJS", "RabbitMQ", "MongoDB", "Mongoose", "Express", "Docker"],
+        "api_used": None,
         "description": "Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data",
         "content":"""
-
+            Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data.
         """
     },
     {
         "slug": "user-teams-manager",
         "image": "heliverse.jpeg",
+        "project_image": ["heliverse1.png", "heliverse2.png"],
         "title": "User & Teams Manager",
-        "github-link": "https://github.com/SudeevDivakar/User-Teams-Manager-Heliverse",
-        "project-link": None,
-        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI"],
-        "api-used": None,
+        "github_link": "https://github.com/SudeevDivakar/User-Teams-Manager-Heliverse",
+        "project_link": None,
+        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI"],
+        "api_used": None,
         "description": "Full Stack Web Development Assessment for the Heliverse Internship Round :D",
         "content":"""
-
+            Full Stack Web Development Assessment for the Heliverse Internship Round :D
         """
     },
     {
         "slug": "portfolio-website",
         "image": "portfolio.jpg",
+        "project_image": None,
         "title": "Portfolio Website",
-        "github-link": "",
-        "project-link": None,
-        "tech-used": ["Django", "DTL", "HTML", "CSS"],
-        "api-used": None,
+        "github_link": "",
+        "project_link": None,
+        "tech_used": ["Django", "DTL", "HTML", "CSS"],
+        "api_used": None,
         "description": "Portfolio website showcasing my projects, skill, achievements and knowledge",
         "content":"""
-
+            Portfolio website showcasing my projects, skill, achievements and knowledge
         """
     },
 ]
@@ -103,44 +113,49 @@ all_projects = [
 
 """Content for Index Page"""
 
+resume_link = ''
+
 top_three_projects = [
     {
         "slug": "turf-review",
         "image": "turfreview.jpeg",
+        "project_image": ["turfreview1.png", "turfreview2.png"],
         "title": "Turf Review System",
-        "github-link": "https://github.com/SudeevDivakar/Turf-Review-System",
-        "project-link": "https://turfreview.vercel.app/",
-        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
-        "api-used": ["Cloudinary", "Leaflet"],
+        "github_link": "https://github.com/SudeevDivakar/Turf-Review-System",
+        "project_link": "https://turfreview.vercel.app/",
+        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
+        "api_used": ["Cloudinary", "OpenStreetMap"],
         "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
         "content": """
-          
+          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
         """
     },
     {
         "slug": "chat-application",
         "image": "chatapp.jpg",
+        "project_image": ["chatapp1.png", "chatapp2.png"],
         "title": "Chat Application",
-        "github-link": "https://github.com/SudeevDivakar/Chit-Chat-MERN-Stack-",
-        "project-link": None,
-        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
-        "api-used": None,
+        "github_link": "https://github.com/SudeevDivakar/Chit-Chat-MERN-Stack-",
+        "project_link": None,
+        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
+        "api_used": None,
         "description": "Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups",
         "content":"""
-
+            Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups. Whether you're looking to chat one-on-one or collaborate with multiple users in a group setting, Chit Chat has you covered.
         """
     },
     {
         "slug": "parking-manager",
         "image": "parkingmanager.jpg",
+        "project_image": ["parkingmanager1.png", "parkingmanager2.png"],
         "title": "Parking Lot Manager",
-        "github-link": "https://github.com/SudeevDivakar/Parking_Management_System",
-        "project-link": None,
-        "tech-used": ["NodeJS", "EJS", "MySQL", "Express", "Bulma"],
-        "api-used": None,
+        "github_link": "https://github.com/SudeevDivakar/Parking_Management_System",
+        "project_link": None,
+        "tech_used": ["NodeJS", "EJS", "MySQL", "Express", "Bulma"],
+        "api_used": None,
         "description": "The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces",
         "content": """
-          
+            The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces. This system aims to enhance the overall parking experience for both administrators and users in an university setting. The Parking Management System utilizes Express and Node.js for the backend, including routing functionalities. Additionally, it employs EJS for dynamic templating. The project has successfully established a connection to a MySQL database. Furthermore, this project is heavily centered around JavaScript, both on the frontend and backend.
         """
     },
 ]
@@ -237,7 +252,8 @@ work_experience = [
 def index(request):
     return render(request, "portfolio/index.html", {
         "top_three_projects": top_three_projects,
-        "achievements": achievements
+        "achievements": achievements,
+        "resume_link": resume_link
     })
 
 def projects(request):
@@ -245,9 +261,9 @@ def projects(request):
         "all_projects": all_projects
     })
 
-def specific_project(request, slug):
+def single_project(request, slug):
     identified_project = next(project for project in all_projects if project['slug'] == slug)
-    return render(request, "portfolio/single-project.html", {
+    return render(request, "portfolio/single_project.html", {
         "project": identified_project
     })
 
@@ -256,5 +272,6 @@ def about_me(request):
         "education": education,
         "work_experience": work_experience,
         "domain_and_technologies": domain_and_technologies,
-        "certifications": certifications
+        "certifications": certifications,
+        "resume_link": resume_link
     })
