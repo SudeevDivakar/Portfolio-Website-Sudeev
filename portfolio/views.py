@@ -5,52 +5,80 @@ from django.shortcuts import render
 all_projects = [
     {
         "slug": "turf-review",
-        "image": "",
+        "image": "turfreview.jpeg",
         "title": "Turf Review System",
-        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered.",
+        "github-link": "https://github.com/SudeevDivakar/Turf-Review-System",
+        "project-link": "https://turfreview.vercel.app/",
+        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
+        "api-used": ["Cloudinary", "Leaflet"],
+        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
         "content": """
           
         """
     },
     {
-        "slug": "programming-is-fun",
-        "image": "coding.jpg",
-        "author": "Maximilian",
-        "date": date(2022, 3, 10),
-        "title": "Programming Is Great!",
-        "excerpt": "Did you ever spend hours searching that one error in your code? Yep - that's what happened to me yesterday...",
+        "slug": "parking-manager",
+        "image": "parkingmanager.jpg",
+        "title": "Parking Lot Manager",
+        "github-link": "https://github.com/SudeevDivakar/Parking_Management_System",
+        "project-link": None,
+        "tech-used": ["NodeJS", "EJS", "MySQL", "Express", "Bulma"],
+        "api-used": None,
+        "description": "The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces",
         "content": """
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+          
         """
     },
     {
-        "slug": "into-the-woods",
-        "image": "woods.jpg",
-        "author": "Maximilian",
-        "date": date(2020, 8, 5),
-        "title": "Nature At Its Best",
-        "excerpt": "Nature is amazing! The amount of inspiration I get when walking in nature is incredible!",
+        "slug": "arm-assembler",
+        "image": "arm.png",
+        "title": "Arm Assembler",
+        "github-link": "https://github.com/SudeevDivakar/ARM-Assembler",
+        "project-link": None,
+        "tech-used": ["Python"],
+        "api-used": None,
+        "description": "Assembler using python lex and yacc for subset of instructions of ARM v6",
         "content": """
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+          
+        """
+    },
+    {
+        "slug": "chat-application",
+        "image": "chatapp.jpg",
+        "title": "Chat Application",
+        "github-link": "https://github.com/SudeevDivakar/Chit-Chat-MERN-Stack-",
+        "project-link": None,
+        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
+        "api-used": None,
+        "description": "Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups",
+        "content":"""
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+        """
+    },
+    {
+        "slug": "inventory-management-rabbitmq",
+        "image": "invmanagement.png",
+        "title": "Microservice Inventory Management (RabbitMQ)",
+        "github-link": "https://github.com/SudeevDivakar/Inventory_Management_Microservices-communication-using-RabbitMQ",
+        "project-link": None,
+        "tech-used": ["NodeJS", "RabbitMQ", "MongoDB", "Mongoose", "Express", "Docker"],
+        "api-used": None,
+        "description": "Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data",
+        "content":"""
+
+        """
+    },
+    {
+        "slug": "user-teams-manager",
+        "image": "heliverse.jpeg",
+        "title": "User & Teams Manager",
+        "github-link": "https://github.com/SudeevDivakar/User-Teams-Manager-Heliverse",
+        "project-link": None,
+        "tech-used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI"],
+        "api-used": None,
+        "description": "Full Stack Web Development Assessment for the Heliverse Internship Round :D",
+        "content":"""
+
         """
     }
 ]
@@ -87,7 +115,7 @@ certifications = [
 
 domain_and_technologies = {
     "Languages": ["Javascript", "Python", "C", "Java" ],
-    "Frontend Development": ["HTML", "CSS", "Bootstrap", "Bulma", "Javascript", "React", "Material UI", "EJS", "DTL"],
+    "Frontend Development": ["HTML", "CSS", "Bootstrap", "Chakra-UI", "Bulma", "Javascript", "React", "Material UI", "EJS", "DTL"],
     "Database/ORM/ODM": ["MongoDB", "MySQL", "Mongoose"],
     "Backend Development": ["NodeJS", "Express", "Django", "Flask"],
     "Version Control": ["Git", "Github"],

@@ -30,14 +30,6 @@
   margin: 0.25rem 0;
 }
 
-.post time {
-  color: #666666;
-  margin: 0.25rem;
-  font-style: italic;
-  font-size: 0.85rem;
-}
-
-.post:hover time,
-.post:active time {
-  color: white;
+.post_content p {
+  text-align: justify;
 }
