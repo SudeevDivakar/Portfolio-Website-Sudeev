@@ -1,6 +1,8 @@
 from datetime import date
 
+from django.http import HttpResponseNotFound
 from django.shortcuts import render
+from django.template.loader import render_to_string
 
 """Content for All Projects Page"""
 
@@ -262,10 +264,14 @@ def projects(request):
     })
 
 def single_project(request, slug):
-    identified_project = next(project for project in all_projects if project['slug'] == slug)
-    return render(request, "portfolio/single_project.html", {
-        "project": identified_project
-    })
+    try:
+        identified_project = next(project for project in all_projects if project['slug'] == slug)
+        return render(request, "portfolio/single_project.html", {
+            "project": identified_project
+        })
+    except:
+        response_data = render_to_string("404.html")
+        return HttpResponseNotFound(response_data)
 
 def about_me(request):
     return render(request, "portfolio/about-me.html", {
@@ -275,3 +281,6 @@ def about_me(request):
         "certifications": certifications,
         "resume_link": resume_link
     })
+
+def custom_404(request, exception):
+    return render(request, "404.html", status=404)

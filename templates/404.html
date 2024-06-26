@@ -1,10 +1,20 @@
 {% extends "base.html" %}
 
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static "portfolio/index.css" %}">
+    <link rel="stylesheet" href="{% static "404.css" %}">
+{% endblock %}
+
 {% block title %}
-    Page Not Found
+    Sudeev Divakar - Page Not Found
 {% endblock %}
 
 {% block content %}
-    <h2>We're sorry</h2>
-    <p>But we couldn't find that page</p>
+    <div id="main-body">
+        <img src="{% static "images/404.png" %}" id="not-found-image" alt="">
+        <h1>Sorry we could not find the page you were searching for</h1>
+        <a href="{% url "starting-page" %}" class="special-link">Back To Home <i class="fa-solid fa-square-arrow-up-right"></i></a>
+    </div>
 {% endblock %}

@@ -7,3 +7,5 @@ urlpatterns = [
     path("projects/<slug:slug>", views.single_project, name="project-detail-page"),
     path("about-me", views.about_me, name="about-me")
 ]
+
+handler404 = 'portfolio.views.custom_404'
