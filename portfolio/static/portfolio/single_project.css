@@ -96,3 +96,9 @@ body {
     font-size: 2.5rem;
   }
 }
+
+@media (max-width: 620px) {
+  .project-description {
+    text-align: left;
+  }
+}

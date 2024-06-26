@@ -78,6 +78,13 @@ all_projects = [
         "description": "Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data",
         "content":"""
             Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data.
+
+            The project is made up of a producer and four consumers. The producer sends messages to an exchange which then routes the messages in the appropriate queues. The queues connect to their respective consumers which all perform various database operations.
+
+            Consumer_one : Performs a basic health check to see if the RabbitMQ server and it's components are running properly
+            Consumer_two : Item Creation Microservice to create an item.
+            Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
+            Consumer_four : Order Processing Microservice to place/update orders and get order details. 
         """
     },
     {
@@ -147,17 +154,24 @@ top_three_projects = [
         """
     },
     {
-        "slug": "parking-manager",
-        "image": "parkingmanager.jpg",
-        "project_image": ["parkingmanager1.png", "parkingmanager2.png"],
-        "title": "Parking Lot Manager",
-        "github_link": "https://github.com/SudeevDivakar/Parking_Management_System",
+        "slug": "inventory-management-rabbitmq",
+        "image": "invmanagement.png",
+        "project_image": ["invmanagement1.jpeg", "invmanagement2.jpeg"],
+        "title": "Microservice Inventory Management (RabbitMQ)",
+        "github_link": "https://github.com/SudeevDivakar/Inventory_Management_Microservices-communication-using-RabbitMQ",
         "project_link": None,
-        "tech_used": ["NodeJS", "EJS", "MySQL", "Express", "Bulma"],
+        "tech_used": ["NodeJS", "RabbitMQ", "MongoDB", "Mongoose", "Express", "Docker"],
         "api_used": None,
-        "description": "The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces",
-        "content": """
-            The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces. This system aims to enhance the overall parking experience for both administrators and users in an university setting. The Parking Management System utilizes Express and Node.js for the backend, including routing functionalities. Additionally, it employs EJS for dynamic templating. The project has successfully established a connection to a MySQL database. Furthermore, this project is heavily centered around JavaScript, both on the frontend and backend.
+        "description": "Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data",
+        "content":"""
+            Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data.
+
+            The project is made up of a producer and four consumers. The producer sends messages to an exchange which then routes the messages in the appropriate queues. The queues connect to their respective consumers which all perform various database operations.
+
+            Consumer_one : Performs a basic health check to see if the RabbitMQ server and it's components are running properly
+            Consumer_two : Item Creation Microservice to create an item.
+            Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
+            Consumer_four : Order Processing Microservice to place/update orders and get order details. 
         """
     },
 ]
@@ -219,11 +233,11 @@ domain_and_technologies = {
 
 education = [
     {
-        "institute" : "Ryan International School",
-        "year" : "2009 - 2019",
-        "text" : "1st-10th Grade",
-        "link" : "https://www.ryangroup.org/ryaninternational/icse/bangalore/ryan-international-school-kundalahalli"
-    },
+        "institute" : "PES University",
+        "year" : "2021 - 2025",
+        "text" : "B.Tech-CSE",
+        "link" : "https://pes.edu/"
+    },  
     {
         "institute" : "Ekya Schools",
         "year" : "2019 - 2021",
@@ -231,11 +245,11 @@ education = [
         "link" : "https://www.ekyaschools.com/itpl/"
     },
     {
-        "institute" : "PES University",
-        "year" : "2021 - 2025",
-        "text" : "B.Tech-CSE",
-        "link" : "https://pes.edu/"
-    }
+        "institute" : "Ryan International School",
+        "year" : "2009 - 2019",
+        "text" : "1st-10th Grade",
+        "link" : "https://www.ryangroup.org/ryaninternational/icse/bangalore/ryan-international-school-kundalahalli"
+    },
 ]
 
 work_experience = [

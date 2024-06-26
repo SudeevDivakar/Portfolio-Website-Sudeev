@@ -1,0 +1,24 @@
+#main-navigation {
+  /* background-color: black; */
+  display: none;
+}
+
+#not-found-image {
+  height: 20rem;
+  width: auto;
+}
+
+#main-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left:2em;
+  margin-right: 2em;
+  text-align: justify;
+}
+
+.special-link {
+  margin-top: 1em;
+}
