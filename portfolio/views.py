@@ -99,7 +99,7 @@ all_projects = [
         "image": "portfolio.jpg",
         "project_image": None,
         "title": "Portfolio Website",
-        "github_link": "",
+        "github_link": "https://github.com/SudeevDivakar/Portfolio-Website-Sudeev",
         "project_link": "https://sudeev-divakar-portfolio.onrender.com/",
         "tech_used": ["Django", "DTL", "HTML", "CSS"],
         "api_used": None,
