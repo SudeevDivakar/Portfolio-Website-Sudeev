@@ -1,0 +1,265 @@
+.saucy-green {
+    background: linear-gradient(45deg, #8df487, hwb(172 41% 5%), rgb(55, 38, 235));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+}
+
+#about-me-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-me-para {
+    max-width: 75%;
+    font-family: "Nunito", sans-serif;
+}
+
+#about-me-photo img {
+    height : 14rem;
+    width: 14rem;
+}
+
+#about-me-para p{
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#about {
+    margin-top: 0;
+}
+
+#education h1 {
+    color: white;
+}
+
+.saucy-yellow {
+    background: linear-gradient(45deg, #40f436, hwb(172 41% 5%), rgb(183, 247, 93));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+}
+
+.institute {
+    display: inline;
+    font-weight: bolder;
+}
+
+.year {
+    display: inline;
+    border: 1px solid rgb(62, 194, 62);
+    padding: 4px;
+    color: white;
+    border-radius: 7px;
+    margin-left: 1em;
+    font-size: x-small;
+    margin-bottom: 1em;
+}
+
+.education-text {
+    font-weight: bold;
+    color: white;
+}
+
+.education-item {
+    padding-bottom: 1.5em;
+}
+
+#education-content {
+    display: flex;
+}
+
+#education-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(62, 194, 62);
+}
+
+.light-green {
+    background-color: rgb(62, 194, 62);
+    padding: 0.5em;
+    border-radius: 0 10px 10px 0;
+    color:white;
+}
+
+.pencil-line {
+    margin-right: 1.5em;
+    border-left: 3px solid rgb(62, 194, 62);
+    padding-bottom: 2em;
+}
+
+#work-experience h1 {
+    color: white;
+}
+
+#work-experience-content {
+    display: flex;
+}
+
+#work-experience-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(62, 194, 62);
+}
+
+.tech-icon {
+    color: white;
+    margin-right: 0.6em;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;  
+}
+
+.tech-icon .tooltip-text {
+    visibility: hidden;
+    width: 80px;
+    height: 15px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -40px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-text {
+    font-size: small;
+}
+
+.tech-icon .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tech-icon:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.work-experience-item {
+    padding-bottom: 2em;
+}
+
+.enmini {
+    font-size: 2.5rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#domain-and-technologies h1 {
+    color: white;
+}
+
+.domain-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.domain-box {
+    color: white;
+    margin-right: 1em;
+    border: 1.55px solid rgb(62, 194, 62);
+    padding: 2px 4px;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+#certifications h1{
+    color : white;
+}
+
+#certifications-content {
+    display: flex;
+}
+
+#certifications-content .certification-image{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    object-position:center;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    transform: rotateZ(0);
+    box-shadow: none;
+}
+
+.bottom-margin {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+.bottom-margin-extra {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.certification-item {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.blue-color {
+    color: rgb(61, 61, 231);
+}
+
+.socials {
+    margin-bottom: 0;
+}
+
+.enminier {
+    font-size: 1.5rem;
+    color: white;
+    font-weight:bold;
+    display: inline-block;
+}
+
+#domain-and-technologies-content {
+    display: flex;
+}
+
+@media (max-width: 1286px) {
+    #about-me-photo {
+        display: none;
+    }
+
+    #about-me-para {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 762px) {
+    #main-name {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 529px) {
+    .socials-item {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 887px) {
+    .year {
+        display: inline-block;
+    }
+}
