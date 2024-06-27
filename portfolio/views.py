@@ -115,6 +115,21 @@ all_projects = [
             Portfolio website showcasing my projects, skill, achievements and knowledge
         """
     },
+    {
+        "slug": "twospoon-ai-frontend-assignment",
+        "image": "twospoonai.png",
+        "project_image": ["twospoonai1.png", "twospoonai2.png", "twospoonai3.png"],
+        "title": "Twospoon.ai Frontend Assignment",
+        "github_link": "https://github.com/SudeevDivakar/Twospoon.ai-Frontend-Assignment",
+        "project_link": "https://sudeev-divakar-twospoonai-frontend.vercel.app/",
+        "tech_used": ["React", "Tailwind CSS", "CSS"],
+        "api_used": None,
+        "description": "Frontend Web Development Assignment made using React and Tailwind CSS",
+        "content":"""
+            This is a Frontend Web Development Assignment made using React and Tailwind CSS.
+            In this assessment, Twospoon.ai provided me with a Figma design, which I then had to use to create a static webpage which looked exactly the same, down to every last detail
+        """
+    },
 ]
 
 """End content for All Projects Page"""
@@ -223,7 +238,7 @@ certifications = [
 
 domain_and_technologies = {
     "Languages": ["Javascript", "Python", "C", "Java" ],
-    "Frontend Development": ["HTML", "CSS", "Bootstrap", "Chakra-UI", "Bulma", "Javascript", "React", "Material UI", "EJS", "DTL"],
+    "Frontend Development": ["HTML", "CSS", "Tailwind CSS", "Bootstrap", "Chakra-UI", "Bulma", "Javascript", "React", "Material UI", "EJS", "DTL"],
     "Database/ORM/ODM": ["MongoDB", "MySQL", "Mongoose"],
     "Backend Development": ["NodeJS", "Express", "Django", "Flask"],
     "Version Control": ["Git", "Github"],
