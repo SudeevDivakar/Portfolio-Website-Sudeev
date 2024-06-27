@@ -139,21 +139,7 @@ all_projects = [
 
 resume_link = ''
 
-top_three_projects = [
-    {
-        "slug": "turf-review",
-        "image": "turfreview.jpeg",
-        "project_image": ["turfreview1.png", "turfreview2.png"],
-        "title": "Turf Review System",
-        "github_link": "https://github.com/SudeevDivakar/Turf-Review-System",
-        "project_link": "https://turfreview.vercel.app/",
-        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
-        "api_used": ["Cloudinary", "OpenStreetMap"],
-        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
-        "content": """
-          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
-        """
-    },
+top_three_projects = [ 
     {
         "slug": "chat-application",
         "image": "chatapp.jpg",
@@ -163,7 +149,7 @@ top_three_projects = [
         "project_link": None,
         "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
         "api_used": None,
-        "description": "Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups",
+        "description": "Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups. Made with MongoDB, Express, React and NodeJS",
         "content":"""
             Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups. Whether you're looking to chat one-on-one or collaborate with multiple users in a group setting, Chit Chat has you covered.
         """
@@ -187,6 +173,20 @@ top_three_projects = [
             Consumer_two : Item Creation Microservice to create an item.
             Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
             Consumer_four : Order Processing Microservice to place/update orders and get order details. 
+        """
+    },
+    {
+        "slug": "turf-review",
+        "image": "turfreview.jpeg",
+        "project_image": ["turfreview1.png", "turfreview2.png"],
+        "title": "Turf Review System",
+        "github_link": "https://github.com/SudeevDivakar/Turf-Review-System",
+        "project_link": "https://turfreview.vercel.app/",
+        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
+        "api_used": ["Cloudinary", "OpenStreetMap"],
+        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
+        "content": """
+          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
         """
     },
 ]
