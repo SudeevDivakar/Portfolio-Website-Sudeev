@@ -198,7 +198,7 @@ achievements = [
         "description": "Secured Second Place in Football in JEET 2024 (RVU)"
     },
     {
-        "image": "inter_dept.jpg",
+        "image": "inter_department.jpg",
         "title": "Winners - Football",
         "description": "Secured First Place in Interdepartment Football 2024 (PESU)"
     },
