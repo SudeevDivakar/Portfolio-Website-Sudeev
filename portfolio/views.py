@@ -107,7 +107,7 @@ all_projects = [
         "project_image": None,
         "title": "Portfolio Website",
         "github_link": "https://github.com/SudeevDivakar/Portfolio-Website-Sudeev",
-        "project_link": "https://sudeev-divakar-portfolio.onrender.com/",
+        "project_link": "https://sudeevdivakar-portfolio.vercel.app/",
         "tech_used": ["Django", "DTL", "HTML", "CSS"],
         "api_used": None,
         "description": "Portfolio website showcasing my projects, skill, achievements and knowledge",
@@ -137,7 +137,7 @@ all_projects = [
 
 """Content for Index Page"""
 
-resume_link = ''
+resume_link = 'https://sudeevdivakar.github.io/SudeevDivakar_Resume.pdf'
 
 top_three_projects = [ 
     {
@@ -240,7 +240,7 @@ domain_and_technologies = {
     "Languages": ["Javascript", "Python", "C", "Java" ],
     "Frontend Development": ["HTML", "CSS", "Tailwind CSS", "Bootstrap", "Chakra-UI", "Bulma", "Javascript", "React", "Material UI", "EJS", "DTL"],
     "Database/ORM/ODM": ["MongoDB", "MySQL", "Mongoose"],
-    "Backend Development": ["NodeJS", "Express", "Django", "Flask"],
+    "Backend Development": ["NodeJS", "Express", "RabbitMQ", "Django", "Flask"],
     "Version Control": ["Git", "Github"],
     "DevOps": ["Docker", "Kubernetes"],
     "API and Testing": ["Postman", "Thunder Client"]
@@ -271,7 +271,7 @@ work_experience = [
     {
         "company" : "Cuvasol Technologies Private Limited",
         "duration" : "June 2024 - August 2024 (2 months)",
-        "position" : "Backend Web Development Intern",
+        "position" : "Web Development Intern",
         "technologies" : ["HTML", "CSS", "PHP", "MySQL", "Postman"],
         "link": "https://www.cuvasol.com"
     }
