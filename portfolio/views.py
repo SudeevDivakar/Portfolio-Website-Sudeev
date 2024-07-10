@@ -8,6 +8,21 @@ from django.template.loader import render_to_string
 
 all_projects = [
     {
+        "slug": "twospoon-ai-frontend-assignment",
+        "image": "twospoonai.png",
+        "project_image": ["twospoonai1.png", "twospoonai2.png", "twospoonai3.png"],
+        "title": "Twospoon.ai Frontend Assignment",
+        "github_link": "https://github.com/SudeevDivakar/Twospoon.ai-Frontend-Assignment",
+        "project_link": "https://sudeev-divakar-twospoonai-frontend.vercel.app/",
+        "tech_used": ["React", "Tailwind CSS", "CSS"],
+        "api_used": None,
+        "description": "Frontend Web Development Assignment made using React and Tailwind CSS",
+        "content":"""
+            This is a Frontend Web Development Assignment made using React and Tailwind CSS.
+            In this assessment, Twospoon.ai provided me with a Figma design, which I then had to use to create a static webpage which looked exactly the same, down to every last detail
+        """
+    },
+    {
         "slug": "turf-review",
         "image": "turfreview.jpeg",
         "project_image": ["turfreview1.png", "turfreview2.png"],
@@ -115,21 +130,6 @@ all_projects = [
             Portfolio website showcasing my projects, skill, achievements and knowledge
         """
     },
-    {
-        "slug": "twospoon-ai-frontend-assignment",
-        "image": "twospoonai.png",
-        "project_image": ["twospoonai1.png", "twospoonai2.png", "twospoonai3.png"],
-        "title": "Twospoon.ai Frontend Assignment",
-        "github_link": "https://github.com/SudeevDivakar/Twospoon.ai-Frontend-Assignment",
-        "project_link": "https://sudeev-divakar-twospoonai-frontend.vercel.app/",
-        "tech_used": ["React", "Tailwind CSS", "CSS"],
-        "api_used": None,
-        "description": "Frontend Web Development Assignment made using React and Tailwind CSS",
-        "content":"""
-            This is a Frontend Web Development Assignment made using React and Tailwind CSS.
-            In this assessment, Twospoon.ai provided me with a Figma design, which I then had to use to create a static webpage which looked exactly the same, down to every last detail
-        """
-    },
 ]
 
 """End content for All Projects Page"""
@@ -176,17 +176,20 @@ top_three_projects = [
         """
     },
     {
-        "slug": "turf-review",
-        "image": "turfreview.jpeg",
-        "project_image": ["turfreview1.png", "turfreview2.png"],
-        "title": "Turf Review System",
-        "github_link": "https://github.com/SudeevDivakar/Turf-Review-System",
-        "project_link": "https://turfreview.vercel.app/",
-        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
-        "api_used": ["Cloudinary", "OpenStreetMap"],
-        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
+        "slug": "arm-assembler",
+        "image": "arm.png",
+        "project_image": None,
+        "title": "Arm Assembler",
+        "github_link": "https://github.com/SudeevDivakar/ARM-Assembler",
+        "project_link": None,
+        "tech_used": ["Python"],
+        "api_used": None,
+        "description": "Assembler using python lex and yacc for subset of instructions of ARM v6",
         "content": """
-          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
+            Assembler using python lex and yacc for subset of instructions of ARM v6
+
+            Instructions Supported:
+            ADC | ADD | AND | B | BIC | BL | BLX | BX | CLZ | CMN | CMP | EOR | LDM | LDR | LDRB | LDRH | MLA | MOV | MRS | MSR | MUL | MVN | ORR | RSB | RSC | SBC | SMULL | SMLAL | STM | STR | STRB | STRH | SUB | SWI | TEQ | TST | UMLAL | UMULL
         """
     },
 ]
