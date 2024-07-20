@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static "app.css" %}">
+    <link rel="stylesheet" href="{% static 'app.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
     {% block links %}{% endblock %}
     <title>{% block title %} Sudeev Divakar {% endblock %}</title>
@@ -13,14 +13,44 @@
   <body>
 
     <header id="main-navigation">
-      <h1><a href="{% url "starting-page" %}">Home</a></h1>
+      <h1><a href="{% url 'starting-page' %}">Home</a></h1>
+      <div id="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <nav id="nav-right">
-        <a class="horizontal-space" href="{% url "about-me" %}">About_Me</a>
-        <a class="horizontal-space" href="{% url "projects-page" %}">All_Projects</a>
+        <a class="horizontal-space inline-block-display" href="{% url 'about-me' %}">ABOUT ME</a>
+        <a class="horizontal-space inline-block-display" href="{% url 'projects-page' %}">ALL PROJECTS</a>
       </nav>
     </header>
 
     {% block content %} {% endblock %}
     
+    <script>
+      document.getElementById('hamburger-menu').addEventListener('click', function() {
+        var nav = document.getElementById('nav-right');
+        nav.classList.toggle('open');
+      });
+
+      document.addEventListener('click', function(event) {
+        var nav = document.getElementById('nav-right');
+        var isClickInsideNav = nav.contains(event.target);
+        var isClickOnHamburger = document.getElementById('hamburger-menu').contains(event.target);
+
+        if (!isClickInsideNav && !isClickOnHamburger) {
+          nav.classList.remove('open');
+        }
+      });
+
+      window.addEventListener('scroll', function() {
+        var nav = document.getElementById('nav-right');
+        var isOpen = nav.classList.contains('open');
+
+        if (isOpen) {
+          nav.classList.remove('open');
+        }
+      });
+    </script>
   </body>
 </html>

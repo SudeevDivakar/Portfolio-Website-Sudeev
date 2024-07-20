@@ -28,7 +28,7 @@ all_projects = [
         "project_image": ["turfreview1.png", "turfreview2.png"],
         "title": "Turf Review System",
         "github_link": "https://github.com/SudeevDivakar/Turf-Review-System",
-        "project_link": "https://turfreview.vercel.app/",
+        "project_link": "",
         "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
         "api_used": ["Cloudinary", "OpenStreetMap"],
         "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
@@ -176,20 +176,17 @@ top_three_projects = [
         """
     },
     {
-        "slug": "arm-assembler",
-        "image": "arm.png",
-        "project_image": None,
-        "title": "Arm Assembler",
-        "github_link": "https://github.com/SudeevDivakar/ARM-Assembler",
-        "project_link": None,
-        "tech_used": ["Python"],
-        "api_used": None,
-        "description": "Assembler using python lex and yacc for subset of instructions of ARM v6",
+        "slug": "turf-review",
+        "image": "turfreview.jpeg",
+        "project_image": ["turfreview1.png", "turfreview2.png"],
+        "title": "Turf Review System",
+        "github_link": "https://github.com/SudeevDivakar/Turf-Review-System",
+        "project_link": "",
+        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
+        "api_used": ["Cloudinary", "OpenStreetMap"],
+        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
         "content": """
-            Assembler using python lex and yacc for subset of instructions of ARM v6
-
-            Instructions Supported:
-            ADC | ADD | AND | B | BIC | BL | BLX | BX | CLZ | CMN | CMP | EOR | LDM | LDR | LDRB | LDRH | MLA | MOV | MRS | MSR | MUL | MVN | ORR | RSB | RSC | SBC | SMULL | SMLAL | STM | STR | STRB | STRH | SUB | SWI | TEQ | TST | UMLAL | UMULL
+          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
         """
     },
 ]
@@ -201,7 +198,7 @@ achievements = [
         "description": "Secured Second Place in Football in JEET 2024 (RVU)"
     },
     {
-        "image": "inter_department.jpg",
+        "image": "inter.jpg",
         "title": "Winners - Football",
         "description": "Secured First Place in Interdepartment Football 2024 (PESU)"
     },
@@ -218,6 +215,12 @@ certifications = [
         "link": "https://www.udemy.com/certificate/UC-75f72636-151d-42c7-bc74-8e662b24211e/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
         "from": "Udemy",
         "date": "Jan 2024"
+    },
+    {
+        "certification": "Python Django - The Practical Guide",
+        "link": "https://www.udemy.com/certificate/UC-7c8cda12-71cc-4192-91ab-d52c95ff040b/",
+        "from": "Udemy",
+        "date": "Jul 2024"
     },
     {
         "certification": "Jira Work Management Fundamentals Badge",
@@ -242,7 +245,7 @@ certifications = [
 domain_and_technologies = {
     "Languages": ["Javascript", "Python", "C", "Java" ],
     "Frontend Development": ["HTML", "CSS", "Tailwind CSS", "Bootstrap", "Chakra-UI", "Bulma", "Javascript", "React", "Material UI", "EJS", "DTL"],
-    "Database/ORM/ODM": ["MongoDB", "MySQL", "Mongoose"],
+    "Database/ORM/ODM": ["MongoDB", "MySQL", "SQLite", "Mongoose"],
     "Backend Development": ["NodeJS", "Express", "RabbitMQ", "Django", "Flask"],
     "Version Control": ["Git", "Github"],
     "DevOps": ["Docker", "Kubernetes"],
