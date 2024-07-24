@@ -8,21 +8,6 @@ from django.template.loader import render_to_string
 
 all_projects = [
     {
-        "slug": "twospoon-ai-frontend-assignment",
-        "image": "twospoonai.png",
-        "project_image": ["twospoonai1.png", "twospoonai2.png", "twospoonai3.png"],
-        "title": "Twospoon.ai Frontend Assignment",
-        "github_link": "https://github.com/SudeevDivakar/Twospoon.ai-Frontend-Assignment",
-        "project_link": "https://sudeev-divakar-twospoonai-frontend.vercel.app/",
-        "tech_used": ["React", "Tailwind CSS", "CSS"],
-        "api_used": None,
-        "description": "Frontend Web Development Assignment made using React and Tailwind CSS",
-        "content":"""
-            This is a Frontend Web Development Assignment made using React and Tailwind CSS.
-            In this assessment, Twospoon.ai provided me with a Figma design, which I then had to use to create a static webpage which looked exactly the same, down to every last detail
-        """
-    },
-    {
         "slug": "turf-review",
         "image": "turfreview.jpeg",
         "project_image": ["turfreview1.png", "turfreview2.png"],
@@ -34,6 +19,27 @@ all_projects = [
         "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
         "content": """
           TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
+        """
+    },
+    {
+        "slug": "inventory-management-rabbitmq",
+        "image": "invmanagement.png",
+        "project_image": ["invmanagement1.jpeg", "invmanagement2.jpeg"],
+        "title": "Microservice Inventory Management (RabbitMQ)",
+        "github_link": "https://github.com/SudeevDivakar/Inventory_Management_Microservices-communication-using-RabbitMQ",
+        "project_link": None,
+        "tech_used": ["NodeJS", "RabbitMQ", "MongoDB", "Mongoose", "Express", "Docker"],
+        "api_used": None,
+        "description": "Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data",
+        "content":"""
+            Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data.
+
+            The project is made up of a producer and four consumers. The producer sends messages to an exchange which then routes the messages in the appropriate queues. The queues connect to their respective consumers which all perform various database operations.
+
+            - Consumer_one : Performs a basic health check to see if the RabbitMQ server and it's components are running properly
+            - Consumer_two : Item Creation Microservice to create an item.
+            - Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
+            - Consumer_four : Order Processing Microservice to place/update orders and get order details. 
         """
     },
     {
@@ -51,6 +57,20 @@ all_projects = [
         """
     },
     {
+        "slug": "school-website",
+        "image": "schoolwebsite.png",
+        "project_image": ["schoolwebsite1.png", "schoolwebsite2.png"],
+        "title": "School Website",
+        "github_link": "https://github.com/SudeevDivakar/School-Website",
+        "project_link": "https://sudeev-school-website.vercel.app/",
+        "tech_used": ["ReactJS", "Tailwind CSS"],
+        "api_used": None,
+        "description": "Website for a school made using React.js and Tailwind CSS. This project was for the first round of the 'Madrocket Technologies & Media' internship.",
+        "content": """
+            This school website provides a comprehensive platform to explore various aspects of the institution, catering to students, parents, and educators. This project was for the first round of the 'Madrocket Technologies & Media' internship and was built using React.js and Tailwind CSS.
+        """
+    },
+    {
         "slug": "arm-assembler",
         "image": "arm.png",
         "project_image": None,
@@ -64,6 +84,7 @@ all_projects = [
             Assembler using python lex and yacc for subset of instructions of ARM v6
 
             Instructions Supported:
+            
             ADC | ADD | AND | B | BIC | BL | BLX | BX | CLZ | CMN | CMP | EOR | LDM | LDR | LDRB | LDRH | MLA | MOV | MRS | MSR | MUL | MVN | ORR | RSB | RSC | SBC | SMULL | SMLAL | STM | STR | STRB | STRH | SUB | SWI | TEQ | TST | UMLAL | UMULL
         """
     },
@@ -82,24 +103,18 @@ all_projects = [
         """
     },
     {
-        "slug": "inventory-management-rabbitmq",
-        "image": "invmanagement.png",
-        "project_image": ["invmanagement1.jpeg", "invmanagement2.jpeg"],
-        "title": "Microservice Inventory Management (RabbitMQ)",
-        "github_link": "https://github.com/SudeevDivakar/Inventory_Management_Microservices-communication-using-RabbitMQ",
-        "project_link": None,
-        "tech_used": ["NodeJS", "RabbitMQ", "MongoDB", "Mongoose", "Express", "Docker"],
+        "slug": "twospoon-ai-frontend-assignment",
+        "image": "twospoonai.png",
+        "project_image": ["twospoonai1.png", "twospoonai2.png", "twospoonai3.png"],
+        "title": "Twospoon.ai Frontend Assignment",
+        "github_link": "https://github.com/SudeevDivakar/Twospoon.ai-Frontend-Assignment",
+        "project_link": "https://sudeev-divakar-twospoonai-frontend.vercel.app/",
+        "tech_used": ["React", "Tailwind CSS", "CSS"],
         "api_used": None,
-        "description": "Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data",
+        "description": "Frontend Web Development Assignment made using React and Tailwind CSS",
         "content":"""
-            Backend Inventory Management System using Node JS. RabbitMQ used as a message broker and Docker used for containerization. MongoDB used as the database to store inventory data.
-
-            The project is made up of a producer and four consumers. The producer sends messages to an exchange which then routes the messages in the appropriate queues. The queues connect to their respective consumers which all perform various database operations.
-
-            Consumer_one : Performs a basic health check to see if the RabbitMQ server and it's components are running properly
-            Consumer_two : Item Creation Microservice to create an item.
-            Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
-            Consumer_four : Order Processing Microservice to place/update orders and get order details. 
+            This is a Frontend Web Development Assignment made using React and Tailwind CSS.
+            In this assessment, Twospoon.ai provided me with a Figma design, which I then had to use to create a static webpage which looked exactly the same, down to every last detail
         """
     },
     {
