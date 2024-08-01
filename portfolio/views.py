@@ -16,9 +16,9 @@ all_projects = [
         "project_link": "",
         "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
         "api_used": ["Cloudinary", "OpenStreetMap"],
-        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
+        "description": "A website to view and add football turfs, provide ratings, store user details, integrates map APIs and user authentication.",
         "content": """
-          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
+          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. Implemented using the MERN stack.
         """
     },
     {
@@ -51,7 +51,7 @@ all_projects = [
         "project_link": None,
         "tech_used": ["NodeJS", "EJS", "MySQL", "Express", "Bulma"],
         "api_used": None,
-        "description": "The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces",
+        "description": "Parking Management System built using MySQL, NodeJS, ExpressJS, EJS, HTML and Bulma CSS. Contains a lot of real world use cases which comes in handy for any parking management system.",
         "content": """
             The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces. This system aims to enhance the overall parking experience for both administrators and users in an university setting. The Parking Management System utilizes Express and Node.js for the backend, including routing functionalities. Additionally, it employs EJS for dynamic templating. The project has successfully established a connection to a MySQL database. Furthermore, this project is heavily centered around JavaScript, both on the frontend and backend.
         """
@@ -65,7 +65,7 @@ all_projects = [
         "project_link": "https://sudeev-school-website.vercel.app/",
         "tech_used": ["ReactJS", "Tailwind CSS"],
         "api_used": None,
-        "description": "Website for a school made using React.js and Tailwind CSS. This project was for the first round of the 'Madrocket Technologies & Media' internship.",
+        "description": "Website for a school made using React.js and Tailwind CSS. First round assignment of the 'Madrocket Technologies & Media' internship.",
         "content": """
             This school website provides a comprehensive platform to explore various aspects of the institution, catering to students, parents, and educators. This project was for the first round of the 'Madrocket Technologies & Media' internship and was built using React.js and Tailwind CSS.
         """
@@ -126,7 +126,7 @@ all_projects = [
         "project_link": None,
         "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI"],
         "api_used": None,
-        "description": "Full Stack Web Development Assessment for the Heliverse Internship Round :D",
+        "description": "Full Stack Web Development Assessment made using React, Material UI, Mongo, NodeJS and ExpressJS",
         "content":"""
             Full Stack Web Development Assessment for the Heliverse Internship Round :D
         """
@@ -199,9 +199,9 @@ top_three_projects = [
         "project_link": "",
         "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI", "JWT"],
         "api_used": ["Cloudinary", "OpenStreetMap"],
-        "description": "TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered",
+        "description": "A website to view and add football turfs, provide ratings, store user details, integrates map APIs and user authentication.",
         "content": """
-          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. It is implemented using the MERN stack.
+          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. Implemented using the MERN stack.
         """
     },
 ]

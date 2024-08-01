@@ -47,10 +47,6 @@ body {
       color: transparent;
 }
 
-#project{
-  margin-left: 2em;
-}
-
 #tech-used {
   display: flex;
   flex-wrap: wrap;
