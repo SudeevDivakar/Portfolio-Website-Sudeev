@@ -18,7 +18,15 @@ all_projects = [
         "api_used": ["Cloudinary", "OpenStreetMap"],
         "description": "A website to view and add football turfs, provide ratings, store user details, integrates map APIs and user authentication.",
         "content": """
-          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. Implemented using the MERN stack.
+            Turf Review System (AirBNB Clone) made using the MERN stack.
+
+            Project Includes:
+            -> Authentication using JWT.
+            -> Features to Add Turfs, Delete Turfs, View Turfs, Login, Register and much more.
+            -> Implements a cumulative rating system for turfs.
+            -> Feature to leave comments/reviews on turfs.
+            -> Stores Turf Images using the Cloudinary API.
+            -> Visualize Turf Locations using the OpenStreetMap maps API. 
         """
     },
     {
@@ -36,10 +44,10 @@ all_projects = [
 
             The project is made up of a producer and four consumers. The producer sends messages to an exchange which then routes the messages in the appropriate queues. The queues connect to their respective consumers which all perform various database operations.
 
-            - Consumer_one : Performs a basic health check to see if the RabbitMQ server and it's components are running properly
-            - Consumer_two : Item Creation Microservice to create an item.
-            - Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
-            - Consumer_four : Order Processing Microservice to place/update orders and get order details. 
+            -> Consumer_one : Performs a basic health check to see if the RabbitMQ server and it's components are running properly
+            -> Consumer_two : Item Creation Microservice to create an item.
+            -> Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
+            -> Consumer_four : Order Processing Microservice to place/update orders and get order details. 
         """
     },
     {
@@ -54,9 +62,10 @@ all_projects = [
         "description": "Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.",
         "content": """
             Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.
+
             Two Modes of Creating Playlists:
-            1. Playlist Consisting of the Top Tracks of an Individual User's Top Artists.
-            2. Playlist Consisting of the Top Tracks of Artists chosen by the user
+            -> Playlist Consisting of the Top Tracks of an Individual User's Top Artists.
+            -> Playlist Consisting of the Top Tracks of Artists chosen by the user
         """
     },
     {
@@ -70,7 +79,13 @@ all_projects = [
         "api_used": None,
         "description": "Parking Management System built using MySQL, NodeJS, ExpressJS, EJS, HTML and Bulma CSS. Contains a lot of real world use cases which comes in handy for any parking management system.",
         "content": """
-            The Parking Management System is a comprehensive solution designed to efficiently manage and streamline parking operations in various settings, such as commercial complexes, residential areas, and public spaces. This system aims to enhance the overall parking experience for both administrators and users in an university setting. The Parking Management System utilizes Express and Node.js for the backend, including routing functionalities. Additionally, it employs EJS for dynamic templating. The project has successfully established a connection to a MySQL database. Furthermore, this project is heavily centered around JavaScript, both on the frontend and backend.
+            Parking Management System built using MySQL, NodeJS, ExpressJS, EJS, HTML and Bulma CSS. Contains a lot of real world use cases which comes in handy for any parking management system.
+
+            Project Includes:
+            -> One Time CheckIn / CheckOut Feature for people who do not opt for a monthly pass
+            -> Monthly Pass Option for Two-Wheelers and Four-Wheelers
+            -> MySQL Triggers and Events to facilitate efficient and seamless data management
+            -> Dashboard to manage staff details
         """
     },
     {
@@ -84,7 +99,7 @@ all_projects = [
         "api_used": None,
         "description": "Website for a school made using React.js and Tailwind CSS. First round assignment of the 'Madrocket Technologies & Media' internship.",
         "content": """
-            This school website provides a comprehensive platform to explore various aspects of the institution, catering to students, parents, and educators. This project was for the first round of the 'Madrocket Technologies & Media' internship and was built using React.js and Tailwind CSS.
+            School website providing a comprehensive platform to explore various aspects of the institution, catering to students, parents, and educators. This project was for the first round of the 'Madrocket Technologies & Media' internship selection round and was built using React.js and Tailwind CSS.
         """
     },
     {
@@ -113,10 +128,16 @@ all_projects = [
         "github_link": "https://github.com/SudeevDivakar/Chit-Chat-MERN-Stack-",
         "project_link": None,
         "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
-        "api_used": None,
-        "description": "Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups",
+        "api_used": ["Cloudinary"],
+        "description": "Chat Application made using ReactJS, MongoDB, Express, NodeJS, socket.io",
         "content":"""
-            Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups. Whether you're looking to chat one-on-one or collaborate with multiple users in a group setting, Chit Chat has you covered.
+            Chat Application made using ReactJS, MongoDB, Express, NodeJS, socket.io.
+
+            Project Includes:
+            -> Authentication using JWT
+            -> One on One chatting
+            -> Group Chatting
+            -> Cloudinary API to store images
         """
     },
     {
@@ -130,8 +151,7 @@ all_projects = [
         "api_used": None,
         "description": "Frontend Web Development Assignment made using React and Tailwind CSS",
         "content":"""
-            This is a Frontend Web Development Assignment made using React and Tailwind CSS.
-            In this assessment, Twospoon.ai provided me with a Figma design, which I then had to use to create a static webpage which looked exactly the same, down to every last detail
+            Frontend Web Development Assignment made using React and Tailwind CSS. Pinpoint recreation of a Figma Design provided by Twospoon.ai
         """
     },
     {
@@ -145,7 +165,13 @@ all_projects = [
         "api_used": None,
         "description": "Full Stack Web Development Assessment made using React, Material UI, Mongo, NodeJS and ExpressJS",
         "content":"""
-            Full Stack Web Development Assessment for the Heliverse Internship Round :D
+            Full Stack Web Development Assessment for the Heliverse Internship First Round Selection Process.
+
+            Project Includes:
+            -> Dashboard to display all teams
+            -> Implements a dashboard along with filters to display all users
+            -> Dashboard to display team details and members
+            -> Implements create team and add user functionalities
         """
     },
     {
@@ -184,9 +210,10 @@ top_three_projects = [
         "description": "Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.",
         "content": """
             Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.
+
             Two Modes of Creating Playlists:
-            1. Playlist Consisting of the Top Tracks of an Individual User's Top Artists.
-            2. Playlist Consisting of the Top Tracks of Artists chosen by the user
+            -> Playlist Consisting of the Top Tracks of an Individual User's Top Artists.
+            -> Playlist Consisting of the Top Tracks of Artists chosen by the user
         """
     },
     {
@@ -204,10 +231,10 @@ top_three_projects = [
 
             The project is made up of a producer and four consumers. The producer sends messages to an exchange which then routes the messages in the appropriate queues. The queues connect to their respective consumers which all perform various database operations.
 
-            Consumer_one : Performs a basic health check to see if the RabbitMQ server and it's components are running properly
-            Consumer_two : Item Creation Microservice to create an item.
-            Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
-            Consumer_four : Order Processing Microservice to place/update orders and get order details. 
+            -> Consumer_one : Performs a basic health check to see if the RabbitMQ server and it's components are running properly
+            -> Consumer_two : Item Creation Microservice to create an item.
+            -> Consumer_three : Stock Management Microservice to manage stock data in the MongoDB Database.
+            -> Consumer_four : Order Processing Microservice to place/update orders and get order details. 
         """
     },
     {
@@ -221,7 +248,15 @@ top_three_projects = [
         "api_used": ["Cloudinary", "OpenStreetMap"],
         "description": "A website to view and add football turfs, provide ratings, store user details, integrates map APIs and user authentication.",
         "content": """
-          TurfReview is a comprehensive system for reviewing and exploring turf locations. Whether you're a sports enthusiast, event planner, or someone looking for the perfect turf for your activities, TurfReview has you covered. Implemented using the MERN stack.
+            Turf Review System (AirBNB Clone) made using the MERN stack.
+
+            Project Includes:
+            -> Authentication using JWT.
+            -> Features to Add Turfs, Delete Turfs, View Turfs, Login, Register and much more.
+            -> Implements a cumulative rating system for turfs.
+            -> Feature to leave comments/reviews on turfs.
+            -> Stores Turf Images using the Cloudinary API.
+            -> Visualize Turf Locations using the OpenStreetMap maps API. 
         """
     },
 ]
