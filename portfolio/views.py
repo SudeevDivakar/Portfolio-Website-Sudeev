@@ -43,6 +43,23 @@ all_projects = [
         """
     },
     {
+        "slug": "spotify-playlist-generator",
+        "image": "spotify.png",
+        "project_image": ["spotify1.png", "spotify2.png", "spotify3.png", "spotify4.png"],
+        "title": "Spotify Playlist Generator",
+        "github_link": "https://github.com/SudeevDivakar/Spotify-Playlist-Generator",
+        "project_link": None,
+        "tech_used": ["ReactJS", "Tailwind CSS"],
+        "api_used": ["Spotify API"],
+        "description": "Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.",
+        "content": """
+            Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.
+            Two Modes of Creating Playlists:
+            1. Playlist Consisting of the Top Tracks of an Individual User's Top Artists.
+            2. Playlist Consisting of the Top Tracks of Artists chosen by the user
+        """
+    },
+    {
         "slug": "parking-manager",
         "image": "parkingmanager.jpg",
         "project_image": ["parkingmanager1.png", "parkingmanager2.png"],
@@ -156,17 +173,20 @@ resume_link = 'https://sudeevdivakar.github.io/SudeevDivakar_Resume.pdf'
 
 top_three_projects = [ 
     {
-        "slug": "chat-application",
-        "image": "chatapp.jpg",
-        "project_image": ["chatapp1.png", "chatapp2.png"],
-        "title": "Chat Application",
-        "github_link": "https://github.com/SudeevDivakar/Chit-Chat-MERN-Stack-",
+        "slug": "spotify-playlist-generator",
+        "image": "spotify.png",
+        "project_image": ["spotify1.png", "spotify2.png", "spotify3.png", "spotify4.png"],
+        "title": "Spotify Playlist Generator",
+        "github_link": "https://github.com/SudeevDivakar/Spotify-Playlist-Generator",
         "project_link": None,
-        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Chakra UI", "JWT"],
-        "api_used": None,
-        "description": "Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups. Made with MongoDB, Express, React and NodeJS",
-        "content":"""
-            Chit Chat is a versatile and user-friendly real-time messaging application designed to facilitate seamless communication between individuals and groups. Whether you're looking to chat one-on-one or collaborate with multiple users in a group setting, Chit Chat has you covered.
+        "tech_used": ["ReactJS", "Tailwind CSS"],
+        "api_used": ["Spotify API"],
+        "description": "Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.",
+        "content": """
+            Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.
+            Two Modes of Creating Playlists:
+            1. Playlist Consisting of the Top Tracks of an Individual User's Top Artists.
+            2. Playlist Consisting of the Top Tracks of Artists chosen by the user
         """
     },
     {
