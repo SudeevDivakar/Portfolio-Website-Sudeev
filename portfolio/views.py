@@ -53,7 +53,7 @@ all_projects = [
     {
         "slug": "spotify-playlist-generator",
         "image": "spotify.png",
-        "project_image": ["spotify1.png", "spotify2.png", "spotify3.png", "spotify4.png"],
+        "project_image": ["spotify1.png", "spotify2.png", "spotify3.png"],
         "title": "Spotify Playlist Generator",
         "github_link": "https://github.com/SudeevDivakar/Spotify-Playlist-Generator",
         "project_link": None,
