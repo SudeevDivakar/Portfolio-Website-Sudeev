@@ -155,26 +155,6 @@ all_projects = [
         """
     },
     {
-        "slug": "user-teams-manager",
-        "image": "heliverse.jpeg",
-        "project_image": ["heliverse1.png", "heliverse2.png"],
-        "title": "User & Teams Manager",
-        "github_link": "https://github.com/SudeevDivakar/User-Teams-Manager-Heliverse",
-        "project_link": None,
-        "tech_used": ["NodeJS", "React", "MongoDB", "Mongoose", "Express", "Material UI"],
-        "api_used": None,
-        "description": "Full Stack Web Development Assessment made using React, Material UI, Mongo, NodeJS and ExpressJS",
-        "content":"""
-            Full Stack Web Development Assessment for the Heliverse Internship First Round Selection Process.
-
-            Project Includes:
-            -> Dashboard to display all teams
-            -> Implements a dashboard along with filters to display all users
-            -> Dashboard to display team details and members
-            -> Implements create team and add user functionalities
-        """
-    },
-    {
         "slug": "portfolio-website",
         "image": "portfolio.jpg",
         "project_image": None,
