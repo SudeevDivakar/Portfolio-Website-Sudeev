@@ -2,7 +2,7 @@
 
 ## Project Link
 
-To view the project, click [here](https://sudeev-divakar-portfolio.onrender.com/)
+To view the project, click [here](https://sudeevdivakar-portfolio.vercel.app/)
 
 ## Overview
 
