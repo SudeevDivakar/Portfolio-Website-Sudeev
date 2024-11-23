@@ -273,6 +273,12 @@ certifications = [
         "date": "Jul 2024"
     },
     {
+        "certification": "50 Days of DSA Python Data Structures Algorithms LEETCODE",
+        "link": "https://www.udemy.com/certificate/UC-f3798645-f677-4b33-bd7f-a11863c08bb3/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
+        "from": "Udemy",
+        "date": "Nov 2024"
+    },
+    {
         "certification": "Jira Work Management Fundamentals Badge",
         "link": "https://university.atlassian.com/student/award/fHUqC9HRyzwQ436EDKpUqQzK",
         "from": "Atlassian",
@@ -330,6 +336,13 @@ work_experience = [
         "position" : "Web Development Intern",
         "technologies" : ["HTML", "CSS", "PHP", "MySQL", "Postman"],
         "link": "https://www.cuvasol.com"
+    },
+    {
+        "company" : "PES University",
+        "duration" : "Sept 2024 - Dec 2024 (4 months)",
+        "position" : "Teaching Assistant for Python",
+        "technologies" : ["Python"],
+        "link": "https://pes.edu/"
     }
 ]
 
