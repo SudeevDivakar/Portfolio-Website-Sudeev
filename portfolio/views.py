@@ -8,6 +8,24 @@ from django.template.loader import render_to_string
 
 all_projects = [
     {
+        "slug": "shopping-application-springboot",
+        "image": "shopcart.jpg",
+        "project_image": None,
+        "title": "Shopping Application Backend Springboot",
+        "github_link": "https://github.com/SudeevDivakar/Shopping-Backend-Application-SpringBoot",
+        "project_link": None,
+        "tech_used": ["Java v21", "SpringBoot", "SpringBoot Microservices", "Spring Cloud Gateway", "MongoDB", "MySQL", "Hibernate / Spring Data JPA", "Keycloak", "Resilience4j", "Docker", "Kafka", "Java Mail Sender", "OpenAPI Swagger Documentation", "Grafana", "Prometheus", "Loki", "Tempo", "JUnit5", "Mockito"],
+        "api_used": None,
+        "description": "Microservices based backend shopping application made using SpringBoot.",
+        "content": """
+            -> This is a microservices-based shopping application built using Java
+            v21, Spring Boot, Kafka, Docker, MongoDB, MySQL, Keycloak,
+            Spring Cloud Gateway, Resilience4j, OpenAPI Swagger Documentation, Grafana, Prometheus, Loki, Tempo, JUnit5 and Mockito.
+            -> The project follows a microservices architecture with multiple services for handling products, orders, inventory, authentication, and
+            notifications.
+        """
+    },
+    {
         "slug": "turf-review",
         "image": "turfreview.jpeg",
         "project_image": ["turfreview1.png", "turfreview2.png"],
@@ -179,21 +197,21 @@ resume_link = 'https://sudeevdivakar.github.io/SudeevDivakar_Resume.pdf'
 
 top_three_projects = [ 
     {
-        "slug": "spotify-playlist-generator",
-        "image": "spotify.png",
-        "project_image": ["spotify1.png", "spotify2.png", "spotify3.png", "spotify4.png"],
-        "title": "Spotify Playlist Generator",
-        "github_link": "https://github.com/SudeevDivakar/Spotify-Playlist-Generator",
+        "slug": "shopping-application-springboot",
+        "image": "shopcart.jpg",
+        "project_image": None,
+        "title": "Shopping Application Backend Springboot",
+        "github_link": "https://github.com/SudeevDivakar/Shopping-Backend-Application-SpringBoot",
         "project_link": None,
-        "tech_used": ["ReactJS", "Tailwind CSS"],
-        "api_used": ["Spotify API"],
-        "description": "Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.",
+        "tech_used": ["Java v21", "SpringBoot", "SpringBoot Microservices", "Spring Cloud Gateway", "MongoDB", "MySQL", "Hibernate / Spring Data JPA", "Keycloak", "Resilience4j", "Docker", "Kafka", "Java Mail Sender", "OpenAPI Swagger Documentation", "Grafana", "Prometheus", "Loki", "Tempo", "JUnit5", "Mockito"],
+        "api_used": None,
+        "description": "Microservices based backend shopping application made using SpringBoot.",
         "content": """
-            Spotify Playlist Generator made using React, Tailwind CSS and the Spotify API.
-
-            Two Modes of Creating Playlists:
-            -> Playlist Consisting of the Top Tracks of an Individual User's Top Artists.
-            -> Playlist Consisting of the Top Tracks of Artists chosen by the user
+            -> This is a microservices-based shopping application built using Java
+            v21, Spring Boot, Kafka, Docker, MongoDB, MySQL, Keycloak,
+            Spring Cloud Gateway, Resilience4j, OpenAPI Swagger Documentation, Grafana, Prometheus, Loki, Tempo, JUnit5 and Mockito.
+            -> The project follows a microservices architecture with multiple services for handling products, orders, inventory, authentication, and
+            notifications.
         """
     },
     {
@@ -299,13 +317,14 @@ certifications = [
 ]
 
 domain_and_technologies = {
-    "Languages": ["Javascript", "Python", "C", "Java" ],
-    "Frontend Development": ["HTML", "CSS", "Tailwind CSS", "Bootstrap", "Chakra-UI", "Bulma", "Javascript", "React", "Material UI", "EJS", "DTL"],
-    "Database/ORM/ODM": ["MongoDB", "MySQL", "SQLite", "Mongoose"],
-    "Backend Development": ["NodeJS", "Express", "RabbitMQ", "Django", "Flask"],
+    "Languages": ["Javascript", "Python", "Java" ],
+    "Frontend Development": ["React", "HTML", "CSS", "Tailwind CSS", "Javascript", "Material UI", "EJS", "DTL"],
+    "Database/ORM/ODM": ["MongoDB", "MySQL", "SQLite", "Hibernate", "Mongoose"],
+    "Backend Development": ["Springboot", "Springboot Microservices", "NodeJS", "Express", "Django", "Flask", "Kafka", "RabbitMQ"],
     "Version Control": ["Git", "Github"],
-    "DevOps": ["Docker", "Kubernetes"],
-    "API and Testing": ["Postman", "Thunder Client"]
+    "DevOps/Cloud": ["Docker", "AWS", "Azure Devops", "MobaXterm"],
+    "API and Testing": ["Postman", "Thunder Client", "JUnit", "Mockito"],
+    "Observability/Monitoring": ["Grafana", "Prometheus", "Loki", "Tempo", "Zipkin & Sleuth"]
 }
 
 education = [
@@ -343,6 +362,12 @@ work_experience = [
         "position" : "Teaching Assistant for Python",
         "technologies" : ["Python"],
         "link": "https://pes.edu/"
+    },
+    {
+        "company" : "Infios (Koerber Supply Chain Software)",
+        "duration" : "Jan 2025 - Jun 2025 (6 months)",
+        "position" : "Devops Engineering Intern",
+        "link": "https://www.koerber-supplychain-software.com/en/infios"
     }
 ]
 
